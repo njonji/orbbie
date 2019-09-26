@@ -5,7 +5,7 @@
 
 .message {
     height: 75rem;
-    background:linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("/assets/img/msg/message.jpg")center/cover fixed no-repeat;
+    background:linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("/assets/img/msg/message.jpg")center/cover fixed no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,16 +15,14 @@
      }
 
    &__title {
-     padding-top: 3rem;  
+     padding:3rem 2rem 0 2rem; 
     font-size: 3.7rem;
     font-weight: 400;
     text-align: center;
     text-transform: capitalize;
-    color:$color-white;
-    margin-right: 3rem;
-    width: 60rem;
-
-
+    color:$color-text;
+   
+  
      @media only screen and (max-width:$bp-small) {
        font-size: 3.2rem;
        width: 55rem;
@@ -36,16 +34,11 @@
     }
 
     &--span {
-
-    padding: .2rem 3.5rem; 
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    background-image: linear-gradient(to right bottom, 
-    rgba($color-primary, .85), 
-    rgba($color-primary-dark, .85));
-   
+      color: $color-primary;
+      font-weight: bold;
     }
-   }
+
+ }
 
    &__text {
        color:$color-text;

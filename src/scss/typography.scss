@@ -220,10 +220,38 @@
     margin: .5rem auto;
     transition: all .5s linear;
 
+    @media only screen and (max-width:$bp-wide-1) {
+       width: 13rem;
+    } 
+    @media only screen and (max-width:$bp-wide-3) {
+       width: 10rem;
+    } 
+    @media only screen and (max-width:$bp-small) {
+       width: 7rem;
+    } 
+
+    
+
     &--small {
         height: .2rem;
         width: 7rem;
     }
 
+    &--big {
+       height: .5rem;
+        @media only screen and (max-width:$bp-wide-1) {
+            width: 15rem;
+         } 
+         @media only screen and (max-width:$bp-wide-3) {
+            width: 13rem;
+         } 
+         @media only screen and (max-width:$bp-small) {
+            width: 10rem;
+         } 
+     
+
+    }
+
 
   }
+  
