@@ -1,0 +1,115 @@
+#testimonials {
+    margin-top: 5rem;
+    padding-top: 5rem;
+    
+}
+
+
+.testimonial {
+    background: $color-white;
+    padding: 5rem;
+    height: 50rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 50rem;
+    align-items: center;
+    justify-items: center;
+    border-radius: 1rem;
+
+    @media only screen and (max-width:$bp-large) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(12, 1fr);
+        height: 70rem;
+      }
+    @media only screen and (max-width:$bp-small) {
+        padding:2rem;
+      }
+    
+    &__author {
+        grid-row: 1 / -1;
+        grid-column: 2 / -1;
+
+        @media only screen and (max-width:$bp-large) {
+            grid-row: 1 / 2;
+            grid-column: 2 / 12;
+           
+          }
+
+        &--img {
+            width: 30rem;
+            border-radius: 2rem;
+            border: 2px solid $color-primary-dark;
+            @media only screen and (max-width:$bp-small-2) {
+                width: 25rem;
+              }
+            
+        }
+    }
+
+    &__content {
+        grid-row: 1 / -1;
+        grid-column: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        @media only screen and (max-width:$bp-large) {
+            grid-row: 2 / -1;
+            grid-column: 2 / 12;
+          }
+       
+        
+
+        &--stars {
+            position: absolute;
+            top: -8rem;
+            right: 0;
+            text-align: right;
+            margin-bottom: 2rem;
+            color: $color-secondary;
+            font-size: 2rem;
+          
+            @media only screen and (max-width:$bp-large) {
+                top: -5rem;
+                right: 50%;
+                transform: translateX(50%);
+              }
+
+        }
+
+        &--text {
+            color: $color-text;
+            font-size: 2.4rem;
+            text-align: center;
+            @media only screen and (max-width:$bp-large) {
+                font-size: 2.2rem;
+              }
+              @media only screen and (max-width:$bp-small-2) {
+                font-size: 1.9rem;
+              }
+        
+        }
+        &--span {
+            font-weight: 700;
+            font-style: italic;
+            
+        }
+
+        &--p {
+            position: relative;
+            padding:0 4rem;
+
+            &-left {
+                position: absolute;
+                top: -1rem;
+                left: 0rem;
+                
+            }
+            &-right {
+                position: absolute;
+                bottom:-1rem;
+                right:0rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,229 @@
+.butto {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.2rem 2rem;
+        display: inline-block;
+        border-radius: 0.3rem;
+        color:$color-white;
+        position: relative;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: 1rem;
+
+        border:none;
+        cursor: pointer;
+        transition: all .3s linear;
+
+       
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(#000,.2);
+       &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+        
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-3px);
+        box-shadow: 0 .5rem 1rem rgba(#000,.2);
+    }
+    
+    &--white {
+        background-color:$color-primary;
+        color:$color-white;
+        &::after {
+            background-color: $color-primary;
+            color:#000;
+        }
+        &:hover {
+            background-color: $color-primary;
+            
+        }
+    }
+    &--green {
+        background-color: $color-primary;
+        color:#fff;
+        &::after {
+            background-color: $color-primary;
+        }    
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    
+    }
+    
+    
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
+
+.butto-text {
+    &:link,
+    &:visited {
+        font-size: 2.5rem;
+        color:#000;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 2px solid $color-primary;
+        padding: .8rem;
+        transition: all .3s;
+        text-transform: capitalize;
+     
+        @media only screen and (max-width:$bp-small) {
+           font-size: 2rem;
+         }
+        @media only screen and (max-width:$bp-small-4) {
+           font-size: 1.8rem;
+         }
+    
+    }
+    &:hover {
+        background-color:$color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba(#000, .15);
+        transform: translateY(-2px);
+
+    }
+    &:active {
+        box-shadow: 0 1rem 2rem rgba(#000, .15);
+        transform: translateY(0);
+
+      }
+   }
+
+   .butto-contact {
+       color: $color-white;
+       background: $color-primary;
+       padding: 1rem 6rem;
+       font-size: 1.8rem;
+       margin-top: 2rem;
+
+       @media only screen and (max-width:$bp-small) {
+        font-size: 1.7rem !important;
+        padding: 1rem 5rem;
+      }
+      @media only screen and (max-width:$bp-small-4) {
+        font-size: 1.6rem;
+        padding: 1rem 3rem;
+      }
+   }
+
+
+  /*  TITLE */
+.title {
+    text-align: center;
+    color: $color-white;
+    align-self: center;
+    
+    &--h1 {
+        font-size: 3.5rem;
+        @media only screen and (max-width:$bp-small) {
+           font-size: 3rem;
+         }
+        @media only screen and (max-width:$bp-small-3) {
+           font-size: 2.7rem;
+         }
+    }
+    &--span {
+        color: $color-primary;
+        font-weight: 700;
+    }
+
+}
+.title__dark {
+    text-align: center;
+    color: $color-text;
+    align-self: center;
+    
+    &--h1 {
+        font-size: 3.5rem;
+        @media only screen and (max-width:$bp-small) {
+           font-size: 3rem;
+         }
+        @media only screen and (max-width:$bp-small-3) {
+           font-size: 2.7rem;
+         }
+    }
+    &--span {
+        color: $color-primary;
+        font-weight: 700;
+    }
+
+}
+
+/* VERTICAL AND HORIZONTAL TITLE */
+.cool-title {
+    position: relative;
+    
+
+    &--horizontal {
+        color: $color-text;
+        font-size: 3rem;
+        font-weight: 400;  
+        letter-spacing: .3rem;
+        @media only screen and (max-width:$bp-small) {
+            font-size: 2.7rem;
+        } 
+    }
+    &--vertical {
+        font-size: 3rem;
+        font-weight: 400;  
+        color: $color-text;
+        letter-spacing: .3rem;
+        display: inline-block;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 8rem;
+        left: -11rem;
+
+        @media only screen and (max-width:$bp-small) {
+            left:-8rem;
+            top: 7rem;
+            font-size: 2.7rem;
+        } 
+    }
+    &--span {
+        color: $color-primary;
+    }
+}
+ 
+
+   /*  UNDERLINE FOR TITLES */
+
+   .title__underline {
+    width: 16rem;
+    height: .3rem;
+    background: $color-primary;
+    margin: .5rem auto;
+    transition: all .5s linear;
+
+    &--small {
+        height: .2rem;
+        width: 7rem;
+    }
+
+
+  }

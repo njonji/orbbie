@@ -1,0 +1,78 @@
+#message {
+    padding-top: 5rem;
+    margin-top: 10rem;
+}
+
+.message {
+    height: 75rem;
+    background:linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url("/assets/img/msg/message.jpg")center/cover fixed no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width:$bp-small-4) {
+       height: 60rem;
+     }
+
+   &__title {
+     padding-top: 3rem;  
+    font-size: 3.7rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    color:$color-white;
+    margin-right: 3rem;
+    width: 60rem;
+
+
+     @media only screen and (max-width:$bp-small) {
+       font-size: 3.2rem;
+       width: 55rem;
+    }
+     @media only screen and (max-width:$bp-small-4) {
+       width: 40rem;
+       font-size: 2.5rem;
+      
+    }
+
+    &--span {
+
+    padding: .2rem 3.5rem; 
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, 
+    rgba($color-primary, .85), 
+    rgba($color-primary-dark, .85));
+   
+    }
+   }
+
+   &__text {
+       color:$color-text;
+       font-size: 2.5rem;
+       padding: 8rem 25rem;
+       text-align: center;
+
+       @media only screen and (max-width:$bp-wide-3) {
+        padding: 5rem 20rem;
+     }
+       @media only screen and (max-width:$bp-large) {
+        padding: 5rem 15rem;
+     }
+       @media only screen and (max-width:$bp-small) {
+        padding: 5rem 10rem;
+        font-size: 2rem;
+     }
+       @media only screen and (max-width:$bp-small-4) {
+        padding: 4rem 5rem;
+        font-size: 1.7rem;
+     }
+      
+       &--link {
+           align-self: center !important;
+           margin: 0 auto;
+           
+       }
+    
+   }
+}
