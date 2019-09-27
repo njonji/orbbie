@@ -10,6 +10,15 @@
     flex-direction: column;
     align-items: center;
 
+    @media only screen and (max-width:$bp-wide-3) {
+       height: 60rem;
+     }
+    @media only screen and (max-width:$bp-small-2) {
+       height: 65rem;
+     }
+    @media only screen and (max-width:$bp-small-3) {
+       height: 70rem;
+     }
     @media only screen and (max-width:$bp-small-4) {
        height: 60rem;
      }

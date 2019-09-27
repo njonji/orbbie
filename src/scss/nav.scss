@@ -221,9 +221,11 @@
 }
 
 
-.borderScroll {
-  border: none;
+.customModal {
+  width: 60rem !important;
+
+  @media only screen and (max-width:$bp-small) {
+    width: 40rem !important;
+  }
 }
-.borderScrollAdd {
-  border: 1px solid $color-primary;
-}
+
