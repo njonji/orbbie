@@ -4,6 +4,7 @@ import "bootstrap"
 import "./main.scss"
 import "./toggler"
 import "./scroll"
+import "./navbar"
 
 
 /* CAROUSEL */

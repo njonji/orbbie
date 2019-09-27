@@ -16,19 +16,24 @@
 
    &__title {
      padding:3rem 2rem 0 2rem; 
-    font-size: 3.7rem;
+    font-size: 3.3rem;
     font-weight: 400;
     text-align: center;
     text-transform: capitalize;
     color:$color-text;
    
   
-     @media only screen and (max-width:$bp-small) {
-       font-size: 3.2rem;
+     @media only screen and (max-width:$bp-wide-2) {
+       font-size: 3rem;
        width: 55rem;
     }
+     @media only screen and (max-width:$bp-small) {
+       font-size: 2.8rem;
+      
+    }
+  
      @media only screen and (max-width:$bp-small-4) {
-       width: 40rem;
+       
        font-size: 2.5rem;
       
     }
@@ -48,6 +53,7 @@
 
        @media only screen and (max-width:$bp-wide-3) {
         padding: 5rem 20rem;
+        font-size: 2.2rem;
      }
        @media only screen and (max-width:$bp-large) {
         padding: 5rem 15rem;

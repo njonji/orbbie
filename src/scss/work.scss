@@ -50,29 +50,41 @@
         margin: 3rem 3rem;
         text-align: center;
         height: 45rem;
-        width: 30rem;
+        width: 35rem;
 
-        @media only screen and (max-width:$bp-wide-2) {
-            width: 28rem;
+        @media only screen and (max-width:$bp-wide-1) {
+            width: 32rem;
             padding: 4rem 2rem;
             height: 40rem;
          }
-        @media only screen and (max-width:$bp-wide-3) {
-            width: 25rem;
+        @media only screen and (max-width:$bp-wide-2) {
+            width: 30rem;
             padding: 2rem 1rem;
             height: 38rem;
             margin:2rem 2rem;
          }
-        @media only screen and (max-width:$bp-wide-5) {
+        @media only screen and (max-width:$bp-wide-3) {
+            width: 28rem;
+            padding: 1rem 1rem;
+            height: 35rem;
+            margin:1rem 1.2rem;
+         }
+        @media only screen and (max-width:$bp-wide-4) {
+            width: 25rem;
+            padding: 1rem 1rem;
+            height: 35rem;
+            margin:1rem 1.2rem;
+         }
+        @media only screen and (max-width:$bp-large) {
             width: 22rem;
             padding: 1rem 1rem;
             height: 35rem;
             margin:1rem 1.2rem;
          }
         @media only screen and (max-width:$bp-medium) {
-            width: 30rem;
+            width: 35rem;
             padding: 2rem 2rem;
-            height: 40rem;
+            height: 35rem;
             margin:2rem 2.5rem;
          }
 
@@ -130,12 +142,10 @@
             font-size: 1.7rem;
             transition: all .4s ease-in-out;
             margin-top: 1.5rem;
-            @media only screen and (max-width:$bp-wide-3) {
+            @media only screen and (max-width:$bp-wide-2) {
                 font-size: 1.5rem;
              }
-            @media only screen and (max-width:$bp-medium) {
-                font-size: 1.6rem;
-             }
+       
 
         
         }

@@ -11,11 +11,12 @@
 </head>
 <body>
 <!-- nav -->
-<nav class="navbar navbar-expand-lg px-4" id="navBar">
+<nav class="navbar navbar-expand-lg px-4 fixed-top " id="navBar">
   <a href="#" class="navbar-brand"> 
     <img src="assets/img/logo/orbbielogo.png" class="navbar--logo"alt="logo">
 
   </a>
+  <button type="button" class="mobileContact" data-toggle="modal" data-target="#exampleModal" data-whatever="">Contact</button>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav"><span class="navbar-icon">
     <div class="bar1 bars"></div><div class="bar2 bars"></div><div class="bar3 bars"></div> </span></button>
   <div class="collapse navbar-collapse" id="myNav">
@@ -27,10 +28,10 @@
         <a href="#work" class="nav-link smooth-scroll">How it works</a>
       </li>
       <li class="nav-item">
-        <a href="#home" class="nav-link smooth-scroll">Request A Demo</a>
+        <a href="#message" class="nav-link smooth-scroll">Why webiste?</a>
       </li>
       <li class="nav-item">
-        <a href="#contact" class="nav-link nav-link--contact smooth-scroll">Contact</a>
+        <a href="#home" class="nav-link nav-link--contact smooth-scroll">Contact</a>
       </li>
     </ul>
     <!-- social icons -->
@@ -93,12 +94,80 @@
           <div id="submit-btn">
               <button class="butto butto-text butto-contact" title="text" role="button" type="submit">Schedule Now</button>
           </div>
+         
       </form>
 
        </div>
   
 </header>
 <!-- homepage end -->
+<!-- MODAL START -->
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modalCenter" role="document">
+    <div class="modal-content">
+    
+      <div class="modal-body">
+        <!-- added class forma2 to get rid of border in popup modal -->
+        <form action="" method="POST" class="forma forma2">
+          <div class="home__form--title">
+              <h1 class="home__form--h1">Schedule  <span class="home__form--span">A Free Demo</span>  Today</h1>
+              <div class="title__underline"></div>
+         
+          </div>
+          
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <input type="text" class="form-control home__form--placeholder" id="name" name="name" placeholder="Full Name" required>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                    <div class="form-group">
+                            <input type="email" name="email" class="form-control home__form--placeholder" id="email" placeholder="Email Address"required>
+                    </div>
+              </div>
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <input type="text" name="phone" class="form-control home__form--placeholder" id="phone" placeholder="Phone Number">
+                  </div>
+              </div>
+              <div class="col-md-12">
+                    <div class="form-group">
+                            <input type="text" name="business" class="form-control home__form--placeholder" id="business" placeholder="Business Name" required>
+                    </div>
+              </div>
+              <div class="col-md-12">
+                    <div class="form-group">
+                            <input type="text" name="zip" class="form-control home__form--placeholder" id="zip" placeholder="Postal/Zip Code" required>
+                    </div>
+              </div>
+          </div>
+
+          <div id="submit-btn">
+              <button class="butto butto-text butto-contact" title="text" role="button" type="submit">Schedule Now</button>
+          </div>
+         
+      </form>
+      </div>
+        <button type="button" class="modalBtn" data-dismiss="modal">Close</button>
+   
+    </div>
+  </div>
+</div>
+
+<!-- MODAL END -->
+
+
+
+
+
+
+
+
 <!-- message start -->
 
 <div class="message" id="message">
