@@ -13,15 +13,7 @@
     @media only screen and (max-width:$bp-wide-3) {
        height: 60rem;
      }
-    @media only screen and (max-width:$bp-small-2) {
-       height: 70rem;
-     }
-    @media only screen and (max-width:$bp-small-3) {
-       height: 72rem;
-     }
-    @media only screen and (max-width:$bp-small-4) {
-       height: 60rem;
-     }
+
 
    &__title {
      padding:3rem 2rem 0 2rem; 
@@ -79,6 +71,10 @@
        &--link {
            align-self: center !important;
            margin: 0 auto;
+
+           @media only screen and (max-width:$bp-large) {
+            display: none !important;
+         }
            
        }
     
