@@ -68,7 +68,10 @@
         &--link {
            text-decoration: none;
            display: none;
-
+           &:active,
+           &:focus {
+               outline: none;
+           }
     
             &-icon {
                 font-size: 3.5rem;
