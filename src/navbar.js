@@ -8,8 +8,10 @@ window.onscroll = function() {
     if(window.scrollY >= 50) {
         nav.classList.add("scaleMe")
         contact.classList.add("showMe")
+       
     }  else {
         contact.classList.remove("showMe")
+
     }
 } 
 
