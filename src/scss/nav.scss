@@ -1,13 +1,15 @@
 .navbar {    
 
     border-bottom: 1px solid $color-text; 
-    z-index: 20;
+    z-index: 100;
+    min-height: 10rem;
     background: $color-white;
     transition: all .3s linear;
     
     
     &__links {
      margin-left: 58%;
+     z-index: 100;
 
      @media only screen and (max-width:$bp-huge) {
        margin-left: 50%;
@@ -44,6 +46,7 @@
      }
      @media only screen and (max-width:$bp-small) {
        width:17rem;
+       margin-left: 2rem;
      }
       
     
@@ -80,13 +83,14 @@
   .nav-link--contact {
    border: 1px solid $color-primary;
    border-radius: 3rem;
-   padding: .5rem 2rem !important;
+   padding: 1.5rem 2rem !important;
    margin-left: 3rem;
-   margin-top: .8rem;
+    
    background: $color-white;
    color: $color-primary;
    display: none !important;
    z-index: 100;
+
 
    &:active,
    &:focus {
@@ -198,10 +202,10 @@
     margin-right: -30%;
   }
   @media only screen and (max-width:$bp-small-3) {
-    margin-right: -25%;
+    margin-right: -22%;
   }
   @media only screen and (max-width:$bp-small-4) {
-    margin-right: -17%;
+    margin-right: -12%;
   }
 
 
