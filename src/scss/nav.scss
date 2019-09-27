@@ -1,45 +1,45 @@
 .navbar {    
 
     border-bottom: 1px solid $color-text; 
-    z-index: 100;
-    min-height: 10rem;
+    min-height: 12rem;
     background: $color-white;
     transition: all .3s linear;
-    
+    padding: 0;
+  
+   
     
     &__links {
-     margin-left: 58%;
-     z-index: 100;
-
+     margin-left: 60%;
+     font-size: 1.9rem;
      @media only screen and (max-width:$bp-huge) {
-       margin-left: 50%;
+       margin-left: 57%;
     }
      @media only screen and (max-width:$bp-wide-2) {
-       margin-left: 42%;
+       margin-left: 49%;
     }
      @media only screen and (max-width:$bp-wide-3) {
-       margin-left: 34%;
+       margin-left: 41%;
     }
      @media only screen and (max-width:$bp-wide-4) {
-       margin-left: 28%;
+       margin-left: 35%;
     }
      @media only screen and (max-width:$bp-wide-5) {
-       margin-left: 20%;
+       margin-left: 27%;
     }
 
 
      @media only screen and (max-width:$bp-large) {
-        margin: 0;
+        margin: 0 auto;
         text-align: center;
-        padding: 0 0 2rem 0;
+        
     }
     
     }
       
     &--logo {  
        width: 15rem;
-       padding: 1rem 0;
-       margin-left: 4rem;
+      margin: 2.5rem 0rem 2.5rem 4rem;
+      cursor: pointer;
 
        @media only screen and (max-width:$bp-wide-4) {
         width: 19rem;
@@ -69,7 +69,7 @@
     font-weight: 400;
     display: inline-block;
     transition: all .3s linear;
-    font-size: 1.9rem;
+  
     margin-left: 1rem;
     padding: 1.3rem 1.2rem !important;
 
@@ -84,8 +84,7 @@
    border: 1px solid $color-primary;
    border-radius: 3rem;
    padding: 1.5rem 2rem !important;
-   margin-left: 3rem;
-    
+   margin-left: 3rem;  
    background: $color-white;
    color: $color-primary;
    display: none !important;
@@ -124,6 +123,10 @@
       opacity: 1;
   }
 
+  .navbar-collapse {
+    padding:0 !important;
+ }
+
   /* CUSTOM NAV TOGGLER */
   .bars {
     width: 3.5rem;
@@ -157,16 +160,45 @@
 } 
 
 .scaleMe {
-  transform: scale(1, .5) translateY(-50%);
- 
+  min-height: 7rem;
+}
+
+.collapsedLinks {
+  margin-left: 58%;
+  @media only screen and (max-width:$bp-huge) {
+    margin-left: 58%;
+ }
+  @media only screen and (max-width:$bp-wide-2) {
+    margin-left: 52%;
+ }
+  @media only screen and (max-width:$bp-wide-4) {
+    margin-left: 45%;
+ }
+  @media only screen and (max-width:$bp-wide-5) {
+    margin-left: 37%;
+ }
+}
+
+.scaleLinks {
+  font-size: 1.5rem;
+
+}
+.scaleLogo {
+  width: 12rem;
+  margin: 1rem 0rem 1rem 4rem;
 }
 
 .showMe {
   display: block !important;
+  padding: 1.1rem 1.5rem !important;
   @media only screen and (max-width:$bp-large) {
     display: none !important;
     
   }
+}
+.scaleModal {
+  padding: .7rem 1.5rem !important;
+  font-size: 1.3rem;
 }
 
 
@@ -190,13 +222,11 @@
 
   @media only screen and (max-width:$bp-large) {
     display: block;
-    margin-right: 17rem;
+    margin-right: -20%;
   }
-  @media only screen and (max-width:$bp-medium) {
-    margin-right: 17rem;
-  }
+
   @media only screen and (max-width:$bp-small) {
-    margin-right: -38%;
+    margin-right: -33%;
   }
   @media only screen and (max-width:$bp-small-2) {
     margin-right: -30%;
