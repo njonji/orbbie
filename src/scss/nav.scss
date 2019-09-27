@@ -90,11 +90,13 @@
     color: $color-white !important;
     background:$color-primary;
 
-}
-   
-   
-
+   }
+   @media only screen and (max-width:$bp-large) {
+    display: none !important;
+    
   }
+   
+ }
   .nav-link:hover {
     color: $color-primary;
   }
@@ -148,6 +150,10 @@
 
 .showMe {
   display: block !important;
+  @media only screen and (max-width:$bp-large) {
+    display: none !important;
+    
+  }
 }
 
 
