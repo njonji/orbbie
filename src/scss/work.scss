@@ -8,6 +8,9 @@
     grid-template-rows: 15rem max-content;
     grid-template-columns: repeat(12, 1fr);
     background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/assets/img/karte/karte.png")center/cover fixed no-repeat;
+    @media only screen and (max-width:$bp-small) {
+        background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/assets/img/karte/karteXS.png")center/cover fixed no-repeat;
+     }
     
 
     &__title {

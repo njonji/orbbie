@@ -1,11 +1,14 @@
 
-
 const nav = document.querySelector(".navbar");
 const contact = document.querySelector(".nav-link--contact");
 const links = document.querySelector(".navbar__links");
 const logo = document.querySelector(".navbar--logo");
 const modalContact = document.querySelector(".mobileContact");
 const toggler = document.querySelector(".navbar-toggler")
+const linkDiv = document.querySelector(".navbar-collapse")
+const barOne = document.querySelector(".bar1")
+const barTwo = document.querySelector(".bar2")
+const barTre = document.querySelector(".bar3")
 
 
 window.onscroll = function() {
@@ -27,6 +30,15 @@ window.onscroll = function() {
 
 toggler.addEventListener("click", e => {
     nav.classList.toggle("scaleNavToggle")
+})
+
+nav.addEventListener("click", e => {
+    if(e.target.tagName === "A") {
+        linkDiv.classList.remove("show")
+        barOne.classList.toggle("change1")
+        barTwo.classList.toggle("change2")
+        barTre.classList.toggle("change3")
+    }
 })
 
 
