@@ -1,9 +1,11 @@
 .home {
-    min-height: calc(100vh - 10rem);
+    min-height: calc(100vh - 12rem);
+    height: calc(100vh - 12rem);
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(12, 1fr);
     padding-top: 15rem;
+    
 
 
 

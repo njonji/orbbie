@@ -15,9 +15,11 @@
         grid-column: 1 / -1;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding-bottom: 1rem;
         border-bottom: 1px solid $color-text;
+        text-align: center;
+
         @media only screen and (max-width:$bp-small-2) {
             flex-direction: column;
             justify-content: center;
@@ -25,24 +27,20 @@
             text-align: center;
            } 
 
+       &--img {
+           width: 20rem;
+           margin-bottom: 2rem;
+       }    
+
+       &--email {
+           font-size: 1.5rem;
+       }
+       &--add {
+           font-size: 1.5rem;
+       }
+
     }
 
-    &__logo {
-        
-        &--img {
-            margin-bottom: 1rem;
-            @media only screen and (max-width:$bp-wide-3) {
-               width: 18rem;
-              } 
-        }
-
-        &--info {
-           font-size: 1.6rem;
-           @media only screen and (max-width:$bp-wide-3) {
-            font-size: 1.3rem;
-           } 
-        }
-    }
     &__links {
    
     text-transform: capitalize;

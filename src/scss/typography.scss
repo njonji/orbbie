@@ -221,6 +221,8 @@
     margin: .5rem auto;
     transition: all .5s linear;
 
+ 
+
     @media only screen and (max-width:$bp-wide-1) {
        width: 13rem;
     } 
@@ -231,7 +233,9 @@
        width: 7rem;
     } 
 
-    
+    &--msg {
+        background: $color-text; 
+    }
 
     &--small {
         height: .2rem;
