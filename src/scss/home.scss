@@ -4,7 +4,25 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(12, 1fr);
-    padding-top: 15rem;
+     padding-top: 15rem;
+    margin-bottom: 40rem;
+
+    @media only screen and (max-width:$bp-huge) {
+        margin-bottom: 25rem;
+    }
+    
+    @media only screen and (max-width:$bp-huge-2) {
+        margin-bottom: 20rem;
+    }
+    
+
+    @media only screen and (max-width:$bp-large) {
+        margin-bottom: 25rem;
+    }
+    @media only screen and (max-width:$bp-small-2) {
+        margin-bottom: 10rem;
+    }
+
     
 
 
