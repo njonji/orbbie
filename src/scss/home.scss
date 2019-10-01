@@ -8,14 +8,13 @@
     margin-bottom: 40rem;
 
     @media only screen and (max-width:$bp-huge) {
-        margin-bottom: 25rem;
-    }
-    
-    @media only screen and (max-width:$bp-huge-2) {
         margin-bottom: 20rem;
     }
     
-
+    @media only screen and (max-width:$bp-huge-2) {
+        margin-bottom: 15rem;
+    }
+    
     @media only screen and (max-width:$bp-large) {
         margin-bottom: 25rem;
     }
