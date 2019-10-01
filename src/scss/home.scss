@@ -1,32 +1,13 @@
 .home {
-    min-height: calc(100vh - 12rem);
-    height: calc(100vh - 12rem);
+   
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: max-content;
     grid-template-columns: repeat(12, 1fr);
-     padding-top: 15rem;
-    margin-bottom: 40rem;
-
-    @media only screen and (max-width:$bp-huge) {
-        margin-bottom: 20rem;
-    }
     
-    @media only screen and (max-width:$bp-huge-2) {
-        margin-bottom: 15rem;
-    }
-    
-    @media only screen and (max-width:$bp-large) {
-        margin-bottom: 25rem;
-    }
-    @media only screen and (max-width:$bp-small-2) {
-        margin-bottom: 10rem;
-    }
-
-    
-
 
 
     &__content {
+        height: calc(100vh - 12rem);
         grid-row: 1 / -1;
         grid-column:1 / 8;
         display: flex;
@@ -35,13 +16,15 @@
         flex-direction: column;
         padding:1rem 3rem;
         margin-top: 2rem;
+        position: relative;
+        
         @media only screen and (max-width:$bp-large) {
             grid-row: 1 / -1;
             grid-column: 1 / -1;
         }
 
         &--heading {
-            font-size: 4.5rem;
+            font-size: 4rem;
             font-weight: 400;
             text-align: center;
             text-transform: capitalize;
@@ -74,19 +57,26 @@
 
         &--img {     
 
-           width: 75rem;
+           width: 65rem;
+           margin-bottom: -15rem;
            
            @media only screen and (max-width:$bp-wide-3) {
             width: 60rem;
          }
            @media only screen and (max-width:$bp-large) {
-            width: 75rem;
+            width: 70rem;
+            margin-bottom: -10rem;
+            
          }
         }
         
         &--link {
            text-decoration: none;
            display: none;
+           position: absolute;
+           bottom: 1rem;
+           right: 50%;
+           transform: translateX(50%);
            &:active,
            &:focus {
                outline: none;
@@ -94,7 +84,6 @@
     
             &-icon {
                 font-size: 3.5rem;
-                margin-top: 10rem;
                 color: $color-primary;
             }
 
@@ -112,7 +101,7 @@
         justify-self: center;
         align-self: center;
         padding: 0 10rem;
-        margin-bottom: -10rem;
+        margin-bottom: -20rem;
  
         @media only screen and (max-width:$bp-huge) {
             padding: 0 7rem;
